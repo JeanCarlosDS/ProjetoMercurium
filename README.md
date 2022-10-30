@@ -1,4 +1,4 @@
-# ProjetoMercurium 🤖
+# Projeto Mercurium 🤖
 
 * Projeto de TCC do curso de Desenvolvimento de Sistemas
 
