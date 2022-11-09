@@ -1,5 +1,6 @@
 # pip install selenium
 # pip install webdriver-manager
+# pip install packaging | Por motivos de bug do webdriver-manager, precisa instalar essa lib manualmente.
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -115,7 +116,7 @@ while True:
 
     break
 
-localizacao_adblock = r'C:\Users\Jean\Desktop\Projetos\ProjetoMercurium\5.1.2_0'
+localizacao_adblock = r'C:\Users\aluno\Desktop\ProjetoMercurium\5.3.0_0'
 chrome_options = Options()
 chrome_options.add_argument('load-extension=' + localizacao_adblock)
 
@@ -168,7 +169,7 @@ while True:
         
 
         # → Retorna em um arquivo o link para as vagas selecionadas junto às informações dela.
-        with open(f'C:\\Users\\Jean\\Desktop\\Projetos\\ProjetoMercurium\\{vaga}.txt', 'a+', encoding='utf-8') as arquivo:
+        with open(f'C:\\Users\\aluno\\Desktop\\ProjetoMercurium\\{vaga}.txt', 'a+', encoding='utf-8') as arquivo:
             arquivo.write('-='*10 + f'Vaga número {i + 1}° da {pagina}° página' + '-='*10 + f'\nLink: {link} \n\n{requisitos_vaga} \n\n{salario_vaga} \n\n{beneficios_vaga}' + '\n' + '-='*34 + '\n'*3)
         arquivo.close
         
